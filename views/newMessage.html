@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Form</title>
+</head>
+
+<body>
+    <form action="/" method="POST" id="messageForm">
+        <label for="userName"><b>NAME:</b></label><br>
+        <input type="text" id="userName" name="userName"><br><br>
+        <label for="textBox"><b>Write Message:</b></label><br>
+        <textarea rows="9" cols="70" id="textBox" name="message" form="messageForm"></textarea><br>
+        <input type="submit" value="SEND" id="send" name="send">
+        <input type="button" id="clear" value="CLEAR" name="clear">
+    </form>
+
+    <script>
+        document.getElementById("clear").onclick = function(){
+            window.location.reload(true);
+        }
+    </script>
+</body>
+
+</html>
